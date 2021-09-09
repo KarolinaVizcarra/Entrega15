@@ -1,0 +1,150 @@
+/*selectores de etiqueta*/
+h1{
+    color: green;
+}
+h2{
+    color: lightcoral;
+}
+h3{
+    color: orange;
+}
+
+a{
+    color: white; text-decoration: none; font-size: 18px;
+}
+
+p{
+    font-size: 18px; line-height: 24px;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+}
+
+nav ul li a{ 
+    color: rgb(128, 58, 0);
+}
+/*selectores de clase*/
+.blue{
+    color: navy;
+}
+.red{
+    color: rgb(230, 17, 59);
+}
+.violet{
+    color: darkviolet;
+}
+.orange{
+    color: darkorange;
+}
+/*selectores de ID*/
+
+/*importamos las fonts desde fonts.google.com */
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text&display=swap');
+
+/*selector universal (reset)*/
+*{
+    margin: 0;
+    padding: 0;font-family: 'STIX Two Text', serif; font-size: 2rem;
+}
+
+/*imagen de fondo*/
+body{
+    background-color: rgb(217, 236, 145);background-image: url(../img/ik.jpg);background-repeat: no-repeat;background-position: center top; background-size: 100%;
+}
+
+/*color de fondo con alpha*/
+nav{
+    background-color: rgba(255, 255, 255, 0.2); padding: 10px; 
+}
+
+/*selector descendente */
+nav ul li a {
+    font-style: italic; font-size: 2rem; font-weight: 600; font-family: 'STIX Two Text', serif; text-decoration: none; text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+/*selector de grupos*/
+h1, h2, h3 {
+    font-style: italic; font-weight: 600;
+}
+
+/*selector de clase */
+.textCenter{
+    text-align: center;
+}
+
+.textLeft{
+    text-align: left;
+}
+
+.textRight{
+    text-align: right;
+}
+
+nav ul li{
+    margin-left: 50px; list-style: none; list-style-position: inside; list-style: none; display: inline-block;margin-left: 20px;
+}
+
+/*definimos que los rem van a valor 10px, no lo defino tomo font size */
+html{
+    font-size: 62.5%;
+}
+
+
+#caja1{
+    width: 50%; background-color: grey; color: white; padding: 10px; float: left;box-sizing: border-box;
+}
+
+#caja2{
+    width: 50%; background-color: rgb(134, 16, 16); color: white; padding: 10px; float: right;box-sizing: border-box;
+}
+
+#caja3{
+    width: 50%; background-color: white; color: black; clear: both;border: double black 5px; margin-top: 10px;
+}
+
+#caja4{
+    width: 300px;height: 200px; background-color: cornflowerblue; color: black; overflow: scroll; padding: 10px;
+}
+
+/*border-style: double;border-color: blueviolet; border-width: 5px*/
+
+
+nav ul{
+    float: right;
+}
+
+footer{
+    background-color: white;text-align: center;
+    position: fixed;bottom: 0;width: 100%;
+}
+
+footer img{
+    position: fixed;right: 20px; bottom: 30px;
+}
+
+ul{
+    list-style: none;
+    background-color: tomato; font-size: 0; padding: 20px;
+}
+
+li{
+    display: inline-block;width: 25%; position: relative; font-size: 14px;
+}
+
+ul ul{
+    position: absolute;display: none;
+}
+
+    ul ul li{
+        display: block;
+    }
+    ul li:hover ul{
+        display: block;
+    }
+    }
+
+a{
+    color: white;text-decoration: none; font-size: 2rem;
+}
